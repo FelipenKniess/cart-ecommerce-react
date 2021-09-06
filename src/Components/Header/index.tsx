@@ -1,36 +1,39 @@
-﻿import React from 'react';
+import React from 'react';
+import { FiShoppingCart } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { Container } from './styles';
-import Logo from '../../assets/images/Logo.png';
-import { useCart } from '../../hooks/useCart';
-import FormatValue from '../../utils/formatValue';
-import GetTotalCart from '../../utils/getTotalCart';
+import { useCart } from '../../Hooks/useCart';
+import formatValue from '../../Utils/formatValue';
+import getTotalCart from '../../Utils/getTotalCart';
+import getQuantityCart from '../../Utils/getQuantityCart';
+import Logo from '../../Assets/images/Logo-Test.png';
 
 const Header:React.FC = () => {
   const { cart } = useCart();
-
-  const totalCart = GetTotalCart(cart);
-
   return (
     <Container>
-      <img src={Logo} className="logo" alt="NexFar" />
+      <Link to="/">
+        <img src={Logo} className="logo" alt="NexFar" />
+      </Link>
 
       <div className="info-header">
-        <div className="cart">
-          <span className="title">NexFar</span>
-          <Link to="/carrinho" className="price-cart">
-            <FiShoppingCart size={22} color="#3cba92" />
-            <span>{FormatValue(totalCart)}</span>
-          </Link>
-          <span className="min-order">Pedido mínimo: R$150,00</span>
-        </div>
+
+        <Link to="/checkout-cart">
+          <div className="cart">
+            <span className="total-cart">
+              {formatValue(getTotalCart(cart))}
+            </span>
+            <FiShoppingCart size={30} />
+            <span className="quantity-cart">{getQuantityCart(cart)}</span>
+          </div>
+        </Link>
 
         <div className="user">
-          F
+          U
         </div>
       </div>
     </Container>
+
   );
 };
-
 export default Header;

@@ -1,33 +1,29 @@
-﻿import React, {
+import React, {
   createContext, ReactNode, useContext, useState,
 } from 'react';
 
 import { toast } from 'react-toastify';
 
-interface DataProduct {
+export interface CartData {
   id: Number;
   name: String,
-  value: String,
-  quantityCart: Number;
+  price: String,
+  quantityCart?: Number;
 }
 
 interface CartContextData {
-  cart: DataProduct[];
-  addProduct: (Product: DataProduct) => void;
-  removeProduct: (Product: DataProduct) => void;
-  removeQtdItemCart: (Product: DataProduct) => void;
+  cart: CartData[];
+  addProduct: (Product: CartData) => void;
+  removeProduct: (Product: CartData) => void;
+  removeQtdItemCart: (Product: CartData) => void;
   cleanCart: () => void;
-}
-
-interface CartProviderProps {
-  children: ReactNode;
 }
 
 const CartContext = createContext<CartContextData>({} as CartContextData);
 
-export const CartProvider = ({ children }: CartProviderProps) => {
-  const [cart, setCart] = useState<DataProduct[]>(() => {
-    const storagedCart = localStorage.getItem('@Nexfar:cart');
+export const CartProvider:React.FC = ({ children }) => {
+  const [cart, setCart] = useState<CartData[]>(() => {
+    const storagedCart = localStorage.getItem('@teste:cart');
 
     if (storagedCart) {
       return JSON.parse(storagedCart);
@@ -36,13 +32,13 @@ export const CartProvider = ({ children }: CartProviderProps) => {
     return [];
   });
 
-  const addProduct = (Product: DataProduct) => {
+  const addProduct = (Product: CartData) => {
     const productAlreadyInCart = cart.find((item) => item.id === Product.id);
 
     if (!productAlreadyInCart) {
-      localStorage.setItem('@Nexfar:cart', JSON.stringify([...cart, { ...Product, quantityCart: 1 }]));
+      localStorage.setItem('@teste:cart', JSON.stringify([...cart, { ...Product, quantityCart: 1 }]));
       setCart([...cart, { ...Product, quantityCart: 1 }]);
-      toast('Produto adicionado no carrinho!');
+      toast.success('Produto adicionado no carrinho!');
       return;
     }
 
@@ -53,26 +49,26 @@ export const CartProvider = ({ children }: CartProviderProps) => {
       } : cartItem));
 
       setCart(updatedCart);
-      localStorage.setItem('@Nexfar:cart', JSON.stringify(updatedCart));
-      toast('Alterado quantidade do produto no carrinho!');
+      localStorage.setItem('@teste:cart', JSON.stringify(updatedCart));
+      toast.success('Alterado quantidade do produto no carrinho!');
     }
   };
 
-  const removeProduct = (Product: DataProduct) => {
+  const removeProduct = (Product: CartData) => {
     const productExists = cart.some((cartProduct) => cartProduct.id === Product.id);
     if (!productExists) {
-      toast('Esse produto não está no carrinho!');
+      toast.error('Esse produto não está no carrinho!');
       return;
     }
 
     const updatedCart = cart.filter((cartItem) => cartItem.id !== Product.id);
     setCart(updatedCart);
-    localStorage.setItem('@Nexfar:cart', JSON.stringify(updatedCart));
+    localStorage.setItem('@teste:cart', JSON.stringify(updatedCart));
 
-    toast('Removido produto do carrinho!');
+    toast.error('Removido produto do carrinho!');
   };
 
-  const removeQtdItemCart = (Product:DataProduct) => {
+  const removeQtdItemCart = (Product:CartData) => {
     const productExistInCart = cart.find((item) => item.id === Product.id);
 
     if (!productExistInCart) {
@@ -91,14 +87,14 @@ export const CartProvider = ({ children }: CartProviderProps) => {
     } : cartItem));
 
     setCart(updatedCart);
-    localStorage.setItem('@Nexfar:cart', JSON.stringify(updatedCart));
-    toast('Alterado quantidade do produto no carrinho!');
+    localStorage.setItem('@teste:cart', JSON.stringify(updatedCart));
+    toast.error('Alterado quantidade do produto no carrinho!');
   };
 
   const cleanCart = () => {
-    localStorage.removeItem('@Nexfar:cart');
+    localStorage.removeItem('@teste:cart');
     setCart([]);
-    toast('Carrinho limpado!');
+    toast.info('Carrinho limpado!');
   };
 
   return (

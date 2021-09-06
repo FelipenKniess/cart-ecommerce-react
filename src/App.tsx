@@ -1,12 +1,19 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import Routes from './routes';
 import GlobalCss from './Assets/global';
+import Header from './Components/Header';
+import AppProvider from './Hooks/appProvider';
 
 const App = () => (
   <BrowserRouter>
-    <GlobalCss />
-    <Routes />
+    <AppProvider>
+      <Header />
+      <GlobalCss />
+      <Routes />
+      <ToastContainer />
+    </AppProvider>
   </BrowserRouter>
 );
 
