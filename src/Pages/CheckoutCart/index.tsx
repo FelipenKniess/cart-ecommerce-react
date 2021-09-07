@@ -81,7 +81,7 @@ const CheckoutCart:React.FC = () => {
             </TableHead>
             <TableBody>
               {cart.map((product) => (
-                <TableRow>
+                <TableRow key={product.id}>
                   <TableCell component="th" scope="row">
                     {product.name}
                   </TableCell>

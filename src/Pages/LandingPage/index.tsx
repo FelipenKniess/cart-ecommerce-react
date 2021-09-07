@@ -28,7 +28,7 @@ const LandingPage = () => {
             const linkProduct = `product/${product.id}`;
 
             return (
-              <li>
+              <li key={product.id}>
                 <img src={product.urlPhotoMedium} alt={product.name} />
                 <span className="name-product">{product.name}</span>
                 <span className="price-product">

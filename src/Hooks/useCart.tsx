@@ -5,7 +5,7 @@ import React, {
 import { toast } from 'react-toastify';
 
 export interface CartData {
-  id: Number;
+  id: number;
   name: String,
   price: String,
   quantityCart?: Number;

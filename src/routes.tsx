@@ -9,7 +9,6 @@ const Routes:React.FC = () => (
     <Route path="/" exact component={LandingPage} />
     <Route path="/product/:id" component={Product} />
     <Route path="/checkout-cart" component={CheckoutCart} />
-
   </Switch>
 );
 

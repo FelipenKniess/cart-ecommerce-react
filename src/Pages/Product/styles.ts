@@ -9,7 +9,7 @@ export const Container = Styled.div`
   margin-top: 40px;
   gap: 50px;
 
-  @media(max-width: 520px){
+  @media(max-width: 800px){
       padding: 10px;
   }
 
@@ -19,7 +19,7 @@ export const Container = Styled.div`
     gap: 5px;
     font-size: 18px;
 
-    @media(max-width: 520px){
+    @media(max-width: 800px){
       font-size: 16px;
 
       svg {
@@ -36,7 +36,7 @@ export const Container = Styled.div`
     justify-content:center;
     gap: 15px;
 
-    @media(max-width: 520px){
+    @media(max-width: 800px){
       flex-direction:column;
     }
     .info-product {
@@ -49,7 +49,7 @@ export const Container = Styled.div`
         text-transform: uppercase;
         font-size: 18px;
 
-        @media(max-width: 520px){
+        @media(max-width: 800px){
           font-size: 14px;
         }
       }
@@ -73,8 +73,8 @@ export const Container = Styled.div`
         line-height: 18px;
         color: #4c4c4c;
 
-        @media(max-width: 520px){
-          font-size: 14px;
+        @media(max-width: 800px){
+          font-size: 16px;
         }
       }
 
