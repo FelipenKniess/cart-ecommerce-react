@@ -21,8 +21,7 @@ export const Container = styled.div`
 
       .name-product {
         color: #222;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        font-size: 16px;
         margin-top: 10px;
         max-width: 250px;
         text-align: center;

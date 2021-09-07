@@ -47,10 +47,10 @@ export const Container = Styled.div`
         color: #000;
         font-weight: bold;
         text-transform: uppercase;
-        font-size: 28px;
+        font-size: 18px;
 
         @media(max-width: 520px){
-          font-size: 20px;
+          font-size: 14px;
         }
       }
 
@@ -72,6 +72,10 @@ export const Container = Styled.div`
         text-align: justify;
         line-height: 18px;
         color: #4c4c4c;
+
+        @media(max-width: 520px){
+          font-size: 14px;
+        }
       }
 
       .buy {

@@ -50,7 +50,6 @@ export const CartProvider:React.FC = ({ children }) => {
 
       setCart(updatedCart);
       localStorage.setItem('@teste:cart', JSON.stringify(updatedCart));
-      toast.success('Alterado quantidade do produto no carrinho!');
     }
   };
 
@@ -65,7 +64,7 @@ export const CartProvider:React.FC = ({ children }) => {
     setCart(updatedCart);
     localStorage.setItem('@teste:cart', JSON.stringify(updatedCart));
 
-    toast.error('Removido produto do carrinho!');
+    toast.success('Removido produto do carrinho!');
   };
 
   const removeQtdItemCart = (Product:CartData) => {
@@ -88,13 +87,11 @@ export const CartProvider:React.FC = ({ children }) => {
 
     setCart(updatedCart);
     localStorage.setItem('@teste:cart', JSON.stringify(updatedCart));
-    toast.error('Alterado quantidade do produto no carrinho!');
   };
 
   const cleanCart = () => {
     localStorage.removeItem('@teste:cart');
     setCart([]);
-    toast.info('Carrinho limpado!');
   };
 
   return (

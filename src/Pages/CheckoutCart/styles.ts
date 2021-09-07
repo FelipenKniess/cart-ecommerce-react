@@ -9,6 +9,30 @@ export const Container = Styled.div`
   margin-top: 40px;
   gap: 50px;
 
+  .topo-checkout {
+    display:flex;
+    justify-content:space-between;
+
+    @media(max-width: 520px){
+      justify-content:space-around;
+
+      button {
+        width: 150px;
+        height: 40px;
+        font-size: 10px;
+
+      }
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight:bold;
+
+    @media(max-width: 520px){
+      text-align:center;
+    }
+  }
   .back-home {
     display: flex;
     align-items:center;
@@ -29,9 +53,14 @@ export const Container = Styled.div`
 
   .content {
     display:flex;
+    justify-content:space-between;
+    gap:30px;
+
+    @media(max-width: 520px){
+      flex-direction:column;
+    }
 
     .total-values {
-      margin-left:30px;
       border: 1px solid #CCC;
       border-radius: 20px;
       padding: 20px;
@@ -60,6 +89,17 @@ export const Container = Styled.div`
       }
     }
 
+    table {
+      user-select:none;
+
+      span {
+        padding: 7px;
+      }
+      svg {
+        cursor:pointer;
+      }
+    }
+
     .info-cart {
       display:flex;
       flex-direction: column;
@@ -67,6 +107,7 @@ export const Container = Styled.div`
 
       button {
         margin-top: 15px;
+        margin-bottom: 15px;
         background: #559617;
         color: #FFF;
       }
