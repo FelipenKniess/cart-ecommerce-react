@@ -1,9 +1,12 @@
 # Carrinho de compras (ecommerce)
 
-## Rotas da aplicação
-- "/" (Listagem dos produtos)
-- "/product/:id" (Página de um produto)
-- "/checkout-cart" (acesso via carrinho do header)
+## Layout da aplicação
+- Listagem dos produtos
+  <img src="./public/images/app.png" alt="Página home">
+- Página de um produto
+  <img src="./public/images/produto.png" alt="Página produto">
+- Carrinho
+  <img src="./public/images/carrinho.png" alt="Página carrinho">
 
 ## Bibliotecas utilizadas (Reactjs) 🚀
 - Typescript
