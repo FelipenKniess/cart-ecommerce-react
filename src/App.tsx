@@ -3,8 +3,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Routes from './routes';
 import GlobalCss from './Assets/global';
-import Header from './Components/Header';
 import AppProvider from './Hooks/appProvider';
+import Header from './Components/Header';
 
 const App = () => (
   <BrowserRouter>
