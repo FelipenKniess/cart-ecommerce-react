@@ -7,39 +7,11 @@
     "urlPhotoLarge": "https://299028l.ha.azioncdn.net/img/2021/05/produto/15765/1/large/03.jpg"
   },
   {
-    "id": 2,
-    "name": "Cadeira Cadeirinha Infantil",
-    "price": "297.55",
-    "urlPhotoMedium": "https://299028l.ha.azioncdn.net/img/2020/08/produto/11841/1/home/136-20.jpg",
-    "urlPhotoLarge": "https://299028l.ha.azioncdn.net/img/2020/08/produto/11841/1/large/136-20.jpg"
-  },
-  {
     "id": 3,
     "name": "Bicicleta Infantil Aro 16 Laranja/Preta Extreme",
     "price": "426.78",
     "urlPhotoMedium": "https://299028l.ha.azioncdn.net/img/2021/05/produto/15190/1/home/extreme-700x700.jpg",
     "urlPhotoLarge": "https://299028l.ha.azioncdn.net/img/2021/05/produto/15190/1/large/extreme-700x700.jpg"
-  },
-  {
-    "id": 4,
-    "name": "Cadeirinha Rosa",
-    "price": "278.55",
-    "urlPhotoMedium": "https://299028l.ha.azioncdn.net/img/2021/05/produto/15802/1/home/20-009-004-cadeira-versati-rosa-7898431501202-angulo-1-2.jpg",
-    "urlPhotoLarge": "https://299028l.ha.azioncdn.net/img/2021/05/produto/15802/1/large/20-009-004-cadeira-versati-rosa-7898431501202-angulo-1-2.jpg"
-  },
-  {
-    "id": 5,
-    "name": "Jogo de Jantar Floreal São Luis",
-    "price": "480.34",
-    "urlPhotoMedium": "https://299028l.ha.azioncdn.net/img/2021/05/produto/15851/1/home/floreal-azulejo-scaled.jpg",
-    "urlPhotoLarge": "https://299028l.ha.azioncdn.net/img/2021/05/produto/15851/1/large/floreal-azulejo-scaled.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Carrinho de Passeio Jip",
-    "price": "189.10",
-    "urlPhotoMedium": "https://299028l.ha.azioncdn.net/img/2019/10/produto/9563/1/home/2112-jip-jip-colorido-01.jpg",
-    "urlPhotoLarge": "https://299028l.ha.azioncdn.net/img/2019/10/produto/9563/1/large/2112-jip-jip-colorido-01.jpg"
   },
   {
     "id": 7,
@@ -56,31 +28,10 @@
     "urlPhotoLarge": "https://299028l.ha.azioncdn.net/img/2019/06/produto/8173/1/large/sofia-black-02.jpg"
   },
   {
-    "id": 9,
-    "name": "Carrinho De Passeio/Pedal",
-    "price": "669.20",
-    "urlPhotoMedium": "https://299028l.ha.azioncdn.net/img/2021/05/produto/15980/1/home/1027-still-10-scaled.jpg",
-    "urlPhotoLarge": "https://299028l.ha.azioncdn.net/img/2021/05/produto/15980/1/large/1027-still-10-scaled.jpg"
-  },
-  {
-    "id": 10,
-    "name": "Bicicleta Infantil Aro 12 Sem Pedal Balance Bike Fast",
-    "price": "168.32",
-    "urlPhotoMedium": "https://299028l.ha.azioncdn.net/img/2019/08/produto/9041/1/home/balance-fast-1.jpg",
-    "urlPhotoLarge": "https://299028l.ha.azioncdn.net/img/2019/08/produto/9041/1/large/balance-fast-1.jpg"
-  },
-  {
     "id": 12,
     "name": "Carrinho de Passeio Jip Jip Menina",
     "price": "249.10",
     "urlPhotoMedium": "https://299028l.ha.azioncdn.net/img/2019/10/produto/9571/1/home/2058-jip-jip-menina.jpg",
     "urlPhotoLarge": "https://299028l.ha.azioncdn.net/img/2019/10/produto/9571/1/large/2058-jip-jip-menina.jpg"
-  },
-  {
-    "id": 13,
-    "name": "Forno elétrico Fogatti",
-    "price": "464.91",
-    "urlPhotoMedium": "https://299028l.ha.azioncdn.net/img/2021/07/produto/18945/1/home/top60-black.jpg",
-    "urlPhotoLarge": "https://299028l.ha.azioncdn.net/img/2021/07/produto/18945/1/large/top60-black.jpg"
   }
 ]
