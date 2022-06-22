@@ -6,10 +6,10 @@ export const Container = styled.header`
   width: 100%;
   align-items: center;
   height: 100px;
-  border-bottom: 3px solid #13997E;
-  background: #FFF;
+  border-bottom: 3px solid #13997e;
+  background: #fff;
 
-  @media(max-width: 520px){
+  @media (max-width: 520px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -28,15 +28,15 @@ export const Container = styled.header`
     .cart {
       display: flex;
       align-items: center;
-      position:relative;
+      position: relative;
       margin-right: 50px;
       cursor: pointer;
 
-      @media(max-width: 520px){
+      @media (max-width: 520px) {
         margin-right: 0px;
       }
       .total-cart {
-        color: #13997E;
+        color: #13997e;
         margin-right: 10px;
         font-size: 18px;
       }
@@ -48,7 +48,7 @@ export const Container = styled.header`
         border-radius: 50%;
         text-align: center;
         background: #f62854;
-        color: #FFF;
+        color: #fff;
         font-size: 10px;
         width: 15px;
         height: 15px;
@@ -61,7 +61,7 @@ export const Container = styled.header`
     }
 
     .user {
-      background: #13997E;
+      background: #13997e;
       cursor: pointer;
       width: 50px;
       height: 50px;
@@ -69,13 +69,12 @@ export const Container = styled.header`
       text-align: center;
       line-height: 50px;
       text-transform: uppercase;
-      color: #FFF;
+      color: #fff;
       font-size: 30px;
 
-      @media(max-width: 520px){
+      @media (max-width: 520px) {
         display: none;
       }
     }
   }
-
 `;
